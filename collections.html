@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections Archive — VERDANT ATELIER | Sculptural Editions</title>
+  <meta name="description" content="Explore handcrafted furniture editions from Verdant Atelier. Curated living, dining, bedroom, and architectural accent pieces shaped from sustainable European hardwoods.">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <span>Private client viewings now open in London & New York</span>
+    <span class="text-olive">•</span>
+    <a href="contact.html">Request Private Appointment</a>
+  </div>
+
+  <!-- Shared Header Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Verdant Atelier Home">
+        <span class="brand-title">VERDANT</span>
+        <span class="brand-subtitle">Atelier d'Architecture</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="collections.html" class="nav-link active">Collections</a></li>
+          <li><a href="faqs.html" class="nav-link">FAQs</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#" class="lookbook-trigger" aria-label="View Lookbook / Saved Pieces" title="Curated Lookbook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span class="lookbook-badge">0</span>
+          </a>
+          <a href="contact.html" class="btn btn-primary btn-sm">Commission Piece</a>
+        </div>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation drawer" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-backdrop"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-head">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-title">VERDANT</span>
+        <span class="brand-subtitle">Atelier d'Architecture</span>
+      </a>
+    </div>
+
+    <ul class="mobile-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="collections.html" class="nav-link active">Collections</a></li>
+      <li><a href="faqs.html" class="nav-link">FAQs</a></li>
+      <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Book Private Consultation</a>
+      <p class="text-sentient text-muted" style="font-size: 0.85rem;">
+        London • New York • Zurich<br>
+        concierge@verdant-atelier.com
+      </p>
+    </div>
+  </aside>
+
+  <!-- MAIN PAGE CONTENT -->
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container">
+        <div class="eyebrow" style="justify-content: center;">Archival Portfolio</div>
+        <h1 class="page-title">The Curated Archive</h1>
+        <p class="page-subtitle lead-text">
+          Numbered editions and bespoke commissions. Each work is shaped from slow-seasoned European hardwoods, solid cast brass, and organic botanical textiles.
+        </p>
+      </div>
+    </section>
+
+    <!-- COLLECTIONS CATALOGUE -->
+    <section class="section-spacing">
+      <div class="container">
+        <!-- Interactive Filter Bar -->
+        <div class="filter-bar">
+          <div class="filter-pills" role="tablist" aria-label="Filter collections by space">
+            <button class="filter-pill collection-filter-pill active" data-category="all" role="tab" aria-selected="true">All Editions</button>
+            <button class="filter-pill collection-filter-pill" data-category="living" role="tab" aria-selected="false">Living Sanctuary</button>
+            <button class="filter-pill collection-filter-pill" data-category="dining" role="tab" aria-selected="false">Dining Solarium</button>
+            <button class="filter-pill collection-filter-pill" data-category="bedroom" role="tab" aria-selected="false">Master Suite</button>
+            <button class="filter-pill collection-filter-pill" data-category="accents" role="tab" aria-selected="false">Architectural Accents</button>
+          </div>
+
+          <div class="filter-tools">
+            <div class="search-input-wrap">
+              <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="collection-search" placeholder="Search archive..." aria-label="Search collection archive">
+            </div>
+
+            <select id="collection-sort" class="sort-select" aria-label="Sort pieces">
+              <option value="curated">Sort: Curated</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="name-asc">Name: A–Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
+          <span id="collection-count" style="font-family: var(--font-display); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-olive-light);">
+            Showing 9 of 9 archival pieces
+          </span>
+          <span class="text-sentient text-muted" style="font-size: 0.82rem;">
+            Complimentary international crating included
+          </span>
+        </div>
+
+        <!-- 9 PRODUCT / COLLECTION CARDS GRID -->
+        <div class="grid-3" id="collections-grid">
+
+          <!-- 1. ORIX VELVET SOFA (Living) -->
+          <article class="collection-card" data-category="living" data-price="4800" data-materials="emerald mohair velvet french oak" data-dimensions="W: 280cm × D: 110cm × H: 74cm" data-wood="French White Oak & Beech Internal Skeleton" data-lead="8–10 Weeks Lead">
+            <div class="collection-image-box">
+              <img src="./assets/images/sofa-emerald.jpg" alt="The Orix Curvilinear Sofa" loading="lazy">
+              <span class="badge card-tag-badge">Numbered Edition</span>
+              <button class="card-save-btn" data-id="piece-orix-sofa" aria-label="Save Orix Sofa to Lookbook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="collection-body">
+              <span class="collection-category">Living Sanctuary</span>
+              <h3 class="collection-title">The Orix Curvilinear Sofa</h3>
+              <p class="collection-desc">Monumental continuous curve upholstered in deep emerald mohair velvet with recessed natural oak plinth and horsehair core.</p>
+              <div class="collection-meta">
+                <span class="collection-price">$4,800</span>
+                <span class="collection-lead">8–10 Weeks</span>
+              </div>
+              <div class="collection-actions">
+                <button class="btn btn-secondary btn-sm btn-quick-view" style="flex: 1;">Quick View</button>
+                <a href="contact.html?piece=Orix%20Curvilinear%20Sofa" class="btn btn-outline btn-sm" style="flex: 1;">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. SOLIS BOUCLÉ ARMCHAIR (Living) -->
+          <article class="collection-card" data-category="living" data-price="2650" data-materials="boucle wool bronze steel" data-dimensions="W: 92cm × D: 88cm × H: 78cm" data-wood="Patinated Bronze & French Oak Armrests" data-lead="6–8 Weeks Lead">
+            <div class="collection-image-box">
+              <img src="./assets/images/chair-lounge.jpg" alt="The Solis Bouclé Armchair" loading="lazy">
+              <span class="badge card-tag-badge">Signature Design</span>
+              <button class="card-save-btn" data-id="piece-solis-chair" aria-label="Save Solis Armchair to Lookbook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="collection-body">
+              <span class="collection-category">Living Sanctuary</span>
+              <h3 class="collection-title">The Solis Bouclé Armchair</h3>
+              <p class="collection-desc">Deep cocoon seating tailored in textured light-beige Belgian bouclé with warm bronze-coated steel frame and solid oak arm caps.</p>
+              <div class="collection-meta">
+                <span class="collection-price">$2,650</span>
+                <span class="collection-lead">6–8 Weeks</span>
+              </div>
+              <div class="collection-actions">
+                <button class="btn btn-secondary btn-sm btn-quick-view" style="flex: 1;">Quick View</button>
+                <a href="contact.html?piece=Solis%20Bouclé%20Armchair" class="btn btn-outline btn-sm" style="flex: 1;">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. KANSO MONOLITHIC DINING TABLE (Dining) -->
+          <article class="collection-card" data-category="dining" data-price="5800" data-materials="solid french oak joinery" data-dimensions="W: 290cm × D: 110cm × H: 75cm" data-wood="Quarter-Sawn European Smoked Oak" data-lead="8–10 Weeks Lead">
+            <div class="collection-image-box">
+              <img src="./assets/images/dining-table.jpg" alt="The Kanso Monolithic Dining Table" loading="lazy">
+              <span class="badge card-tag-badge">Masterpiece</span>
+              <button class="card-save-btn" data-id="piece-kanso-table" aria-label="Save Kanso Table to Lookbook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="collection-body">
+              <span class="collection-category">Dining Solarium</span>
+              <h3 class="collection-title">The Kanso Dining Table</h3>
+              <p class="collection-desc">Substantial 6cm thick oak slab featuring exposed wedged through-tenons and hand-scraped soft bevels that invite generous communal gatherings.</p>
+              <div class="collection-meta">
+                <span class="collection-price">$5,800</span>
+                <span class="collection-lead">8–10 Weeks</span>
+              </div>
+              <div class="collection-actions">
+                <button class="btn btn-secondary btn-sm btn-quick-view" style="flex: 1;">Quick View</button>
+                <a href="contact.html?piece=Kanso%20Dining%20Table" class="btn btn-outline btn-sm" style="flex: 1;">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. KYOTO MINIMALIST DINING CHAIR (Dining) -->
+          <article class="collection-card" data-category="dining" data-price="1450" data-materials="paper cord solid walnut shokunin" data-dimensions="W: 54cm × D: 52cm × H: 77cm" data-wood="American Black Walnut & Woven Cord" data-lead="4–6 Weeks Lead">
+            <div class="collection-image-box">
+              <img src="./assets/images/chair-sculptural.jpg" alt="The Kyoto Dining Chair" loading="lazy">
+              <span class="badge card-tag-badge">Artisan Joinery</span>
+              <button class="card-save-btn" data-id="piece-kyoto-chair" aria-label="Save Kyoto Chair to Lookbook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="collection-body">
+              <span class="collection-category">Dining Solarium</span>
+              <h3 class="collection-title">The Kyoto Dining Chair</h3>
+              <p class="collection-desc">Sculpted backrest steam-bent from a single timber billet, paired with a three-ply woven Danish paper cord seat for sublime lumbar support.</p>
+              <div class="collection-meta">
+                <span class="collection-price">$1,450</span>
+                <span class="collection-lead">4–6 Weeks</span>
+              </div>
+              <div class="collection-actions">
+                <button class="btn btn-secondary btn-sm btn-quick-view" style="flex: 1;">Quick View</button>
+                <a href="contact.html?piece=Kyoto%20Dining%20Chair" class="btn btn-outline btn-sm" style="flex: 1;">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. MONOLITH BEDROOM SUITE (Bedroom) -->
+          <article class="collection-card" data-category="bedroom" data-price="6400" data-materials="french oak brass floating platform" data-dimensions="W: 220cm × L: 235cm × H: 88cm" data-wood="Solid French White Oak" data-lead="8–12 Weeks Lead">
+            <div class="collection-image-box">
+              <img src="./assets/images/bedroom-suite.jpg" alt="The Monolith Platform Bed" loading="lazy">
+              <span class="badge card-tag-badge">Bespoke Suite</span>
+              <button class="card-save-btn" data-id="piece-monolith-bed" aria-label="Save Monolith Bed to Lookbook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="collection-body">
+              <span class="collection-category">Master Suite</span>
+              <h3 class="collection-title">The Monolith Platform Bed</h3>
+              <p class="collection-desc">Cantilevered floating frame engineered to conceal supportive internal ribs, finished with integrated floating brass night shelves.</p>
+              <div class="collection-meta">
+                <span class="collection-price">$6,400</span>
+                <span class="collection-lead">8–12 Weeks</span>
+              </div>
+              <div class="collection-actions">
+                <button class="btn btn-secondary btn-sm btn-quick-view" style="flex: 1;">Quick View</button>
+                <a href="contact.html?piece=Monolith%20Platform%20Bed" class="btn btn-outline btn-sm" style="flex: 1;">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. SYLVAN ZEN CONSOLE (Bedroom) -->
+          <article class="collection-card" data-category="bedroom" data-price="1900" data-materials="smoked ash soft-close drawer" data-dimensions="W: 60cm × D: 45cm × H: 50cm" data-wood="Smoked Ash & Tuscan Leather Lining" data-lead="4–6 Weeks Lead">
+            <div class="collection-image-box">
+              <img src="./assets/images/bedroom-zen.jpg" alt="The Sylvan Console Nightstand" loading="lazy">
+              <span class="badge card-tag-badge">Limited Edition</span>
+              <button class="card-save-btn" data-id="piece-sylvan-console" aria-label="Save Sylvan Console to Lookbook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="collection-body">
+              <span class="collection-category">Master Suite</span>
+              <h3 class="collection-title">The Sylvan Console Nightstand</h3>
+              <p class="collection-desc">Compact sculptural night companion featuring hand-cut dovetail drawers lined in suede olive leather and invisible push-touch runners.</p>
+              <div class="collection-meta">
+                <span class="collection-price">$1,900</span>
+                <span class="collection-lead">4–6 Weeks</span>
+              </div>
+              <div class="collection-actions">
+                <button class="btn btn-secondary btn-sm btn-quick-view" style="flex: 1;">Quick View</button>
+                <a href="contact.html?piece=Sylvan%20Console%20Nightstand" class="btn btn-outline btn-sm" style="flex: 1;">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. NARA FLUTED CREDENZA (Accents / Living) -->
+          <article class="collection-card" data-category="accents" data-price="4950" data-materials="fluted oak cast brass credenza" data-dimensions="W: 210cm × D: 52cm × H: 80cm" data-wood="Solid Fluted French White Oak" data-lead="8–10 Weeks Lead">
+            <div class="collection-image-box">
+              <img src="./assets/images/credenza-wood.jpg" alt="The Nara Fluted Credenza" loading="lazy">
+              <span class="badge card-tag-badge">Master Joinery</span>
+              <button class="card-save-btn" data-id="piece-nara-credenza" aria-label="Save Nara Credenza to Lookbook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="collection-body">
+              <span class="collection-category">Architectural Accents</span>
+              <h3 class="collection-title">The Nara Fluted Credenza</h3>
+              <p class="collection-desc">Three-dimensional vertical fluting gouged into continuous solid oak door leaves, suspended on four cylindrical brass columns.</p>
+              <div class="collection-meta">
+                <span class="collection-price">$4,950</span>
+                <span class="collection-lead">8–10 Weeks</span>
+              </div>
+              <div class="collection-actions">
+                <button class="btn btn-secondary btn-sm btn-quick-view" style="flex: 1;">Quick View</button>
+                <a href="contact.html?piece=Nara%20Fluted%20Credenza" class="btn btn-outline btn-sm" style="flex: 1;">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. ASTRA BRASS PENDANT (Accents) -->
+          <article class="collection-card" data-category="accents" data-price="1850" data-materials="sand cast brass alabaster lighting" data-dimensions="Dia: 68cm × Drop: 120cm (Customizable)" data-wood="Unlacquered Sand-Cast Brass & Alabaster" data-lead="4–6 Weeks Lead">
+            <div class="collection-image-box">
+              <img src="./assets/images/lighting-brass.jpg" alt="The Astra Brass Pendant Chandelier" loading="lazy">
+              <span class="badge card-tag-badge">Sculptural Light</span>
+              <button class="card-save-btn" data-id="piece-astra-pendant" aria-label="Save Astra Pendant to Lookbook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="collection-body">
+              <span class="collection-category">Architectural Accents</span>
+              <h3 class="collection-title">The Astra Pendant Chandelier</h3>
+              <p class="collection-desc">Warm glowing disc of hand-turned Spanish alabaster framed in heavy hand-patinated raw brass that casts an ethereal architectural aura.</p>
+              <div class="collection-meta">
+                <span class="collection-price">$1,850</span>
+                <span class="collection-lead">4–6 Weeks</span>
+              </div>
+              <div class="collection-actions">
+                <button class="btn btn-secondary btn-sm btn-quick-view" style="flex: 1;">Quick View</button>
+                <a href="contact.html?piece=Astra%20Pendant%20Chandelier" class="btn btn-outline btn-sm" style="flex: 1;">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. CIRQUE CURVED SOFA (Living) -->
+          <article class="collection-card" data-category="living" data-price="5200" data-materials="olive bouclé sculpt curved living" data-dimensions="W: 260cm × D: 115cm × H: 76cm" data-wood="Kiln-Dried European Beech & Walnut Feet" data-lead="8–10 Weeks Lead">
+            <div class="collection-image-box">
+              <img src="./assets/images/sofa-curved.jpg" alt="The Cirque Organic Lounge" loading="lazy">
+              <span class="badge card-tag-badge">Curator's Choice</span>
+              <button class="card-save-btn" data-id="piece-cirque-sofa" aria-label="Save Cirque Lounge to Lookbook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="collection-body">
+              <span class="collection-category">Living Sanctuary</span>
+              <h3 class="collection-title">The Cirque Organic Lounge</h3>
+              <p class="collection-desc">Continuous flowing serpentine sofa tailored in natural undyed virgin wool with ergonomic double-tiered back cushions and tapered walnut feet.</p>
+              <div class="collection-meta">
+                <span class="collection-price">$5,200</span>
+                <span class="collection-lead">8–10 Weeks</span>
+              </div>
+              <div class="collection-actions">
+                <button class="btn btn-secondary btn-sm btn-quick-view" style="flex: 1;">Quick View</button>
+                <a href="contact.html?piece=Cirque%20Organic%20Lounge" class="btn btn-outline btn-sm" style="flex: 1;">Inquire</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BESPOKE CUSTOM SIZING CALLOUT -->
+    <section class="section-spacing-sm" style="background-color: var(--color-canvas-dark); border-top: 1px solid var(--color-beige-border);">
+      <div class="container">
+        <div style="background-color: var(--color-canvas-card); border: 1px solid var(--color-beige); padding: clamp(2.5rem, 5vw, 4rem); border-radius: var(--radius-xs); display: grid; grid-template-columns: 1.4fr 0.6fr; gap: 2.5rem; align-items: center;">
+          <div>
+            <div class="eyebrow">Haute Sur Mesure</div>
+            <h2>Require Bespoke Dimensions or Rare Timbers?</h2>
+            <p class="lead-text">
+              Over 40% of our commissions are customized for specific residential dimensions, penthouse ceiling heights, or client-supplied COM textiles. Collaborate directly with our master draftsmen.
+            </p>
+          </div>
+          <div style="text-align: right;">
+            <a href="contact.html" class="btn btn-primary btn-lg" style="width: 100%;">Initiate Custom Commission</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="modal-overlay" id="quick-view-modal" aria-hidden="true" role="dialog">
+    <div class="modal-window">
+      <button class="modal-close-btn" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-grid">
+        <div class="modal-media">
+          <img id="modal-img" src="./assets/images/collection-living.jpg" alt="Piece Preview">
+        </div>
+        <div class="modal-content">
+          <div>
+            <div id="modal-category" class="collection-category">Living Room</div>
+            <h3 id="modal-title" class="collection-title" style="font-size: 1.65rem; margin-bottom: 0.5rem;">The Piece Title</h3>
+            <div id="modal-price" class="collection-price" style="margin-bottom: 1.25rem;">$4,800</div>
+            <p id="modal-desc" class="collection-desc" style="font-size: 0.95rem;">Detailed description of craftsmanship, finishing, and spatial intent.</p>
+            
+            <table class="modal-specs-table">
+              <tr>
+                <td>Dimensions</td>
+                <td id="modal-dimensions">W: 240cm × D: 105cm × H: 76cm</td>
+              </tr>
+              <tr>
+                <td>Wood & Frame</td>
+                <td id="modal-wood">Solid French Oak & Cast Brass</td>
+              </tr>
+              <tr>
+                <td>Lead Time</td>
+                <td id="modal-lead">Made to order (6–8 weeks)</td>
+              </tr>
+            </table>
+          </div>
+
+          <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+            <a id="modal-inquire-btn" href="contact.html" class="btn btn-primary" style="flex: 1;">Inquire For Acquisition</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COOKIE CONSENT BANNER -->
+  <div class="cookie-banner" id="cookie-consent-banner" role="dialog" aria-label="Cookie Preferences">
+    <div class="cookie-title">Digital Sanctuary & Cookies</div>
+    <p class="cookie-text">
+      We utilize essential and refined analytics cookies to respect your privacy, preserve your curated Lookbook, and deliver an elevated architectural browsing experience.
+    </p>
+    <div class="cookie-actions">
+      <button class="btn btn-primary btn-sm" id="cookie-accept">Accept All</button>
+      <button class="btn btn-outline btn-sm" id="cookie-decline">Essential Only</button>
+      <a href="privacy.html" class="text-sentient text-muted" style="font-size: 0.8rem; align-self: center; text-decoration: underline;">Read Policy</a>
+    </div>
+  </div>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-title">VERDANT</span>
+            <span class="brand-subtitle">Atelier d'Architecture</span>
+          </a>
+          <p class="footer-brand-desc">
+            Bespoke furniture crafted from certified European timber, hand-buffed organic finishes, and architectural joinery. Made to outlive generations.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 0 0-4.37 23.18c-.06-.94-.12-2.38.02-3.41l.99-4.22s-.25-.5-.25-1.25c0-1.17.68-2.04 1.52-2.04.72 0 1.06.54 1.06 1.18 0 .72-.46 1.8-.7 2.8-.2.84.42 1.53 1.25 1.53 1.5 0 2.65-1.58 2.65-3.87 0-2.02-1.45-3.44-3.53-3.44-2.4 0-3.81 1.8-3.81 3.66 0 .73.28 1.5.63 1.93.07.08.08.15.06.24l-.23.95c-.04.15-.12.18-.28.11-1.04-.48-1.69-2-1.69-3.21 0-2.62 1.9-5.02 5.48-5.02 2.88 0 5.11 2.05 5.11 4.79 0 2.86-1.8 5.16-4.3 5.16-.84 0-1.63-.44-1.9-.95l-.52 1.97c-.19.72-.7 1.62-1.04 2.18A12 12 0 1 0 12 0z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="collections.html">Collections Archive</a></li>
+            <li><a href="faqs.html">Frequently Asked Questions</a></li>
+            <li><a href="contact.html">Contact & Showrooms</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Sanctuaries</div>
+          <div class="text-sentient text-muted" style="font-size: 0.9rem; line-height: 1.8;">
+            <strong style="color: var(--color-beige-light); font-family: var(--font-display); font-size: 0.75rem; letter-spacing: 0.1em; display: block;">LONDON FLAGSHIP</strong>
+            28 Mount Street, Mayfair<br>
+            London W1K 2SX, UK<br><br>
+            <strong style="color: var(--color-beige-light); font-family: var(--font-display); font-size: 0.75rem; letter-spacing: 0.1em; display: block;">NEW YORK ATELIER</strong>
+            142 Franklin Street, Tribeca<br>
+            New York, NY 10013, USA
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">The Gazette</div>
+          <p class="footer-newsletter-text">
+            Receive private exhibition invitations, seasonal monographs, and early previews of limited archival releases.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required aria-label="Email for newsletter">
+            <button type="submit" class="btn btn-secondary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 VERDANT ATELIER LTD. ALL RIGHTS RESERVED. HAUTE ÉBÉNISTERIE.
+        </div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="faqs.html">Care Instructions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
